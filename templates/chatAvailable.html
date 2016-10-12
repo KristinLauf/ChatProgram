@@ -1,0 +1,22 @@
+
+<div class = "makeNewChat">
+	<h2>Make a new room</h2>
+
+
+	<input ng-model="roomName" placeholder="Insert room name here">
+	<button ng-click="addRoom()">Add room!</button>
+	<h3>Choose available chat</h3>
+	<ul>
+		<li ng-repeat="item in roomNames" ng-click="joinRoom(item)">{{item}}</li>
+	</ul> 
+
+<!-- 	<h3>User</h3>
+	<ul>
+		<li ng-repeat="user in userlist">{{user.userlist}}</li>
+	</ul>	 -->
+
+</div>
+
+
+
+
